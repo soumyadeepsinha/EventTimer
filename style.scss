@@ -1,0 +1,117 @@
+// Media Query
+@mixin breakpoint($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: url('/background.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(34, 34, 34, 0.5);
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    color: #fff;
+    font: size 28px;
+    font-weight: 500;
+  }
+
+  span {
+    font-size: 48px;
+    font-weight: 900;
+  }
+
+  @include breakpoint(480px) {
+    font-size: 36px;
+  }
+
+  @include breakpoint(768px) {
+    font-size: 42px;
+  }
+
+  @include breakpoint(1024px) {
+    font-size: 56px;
+  }
+
+  @include breakpoint(1280px) {
+    font-size: 70px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 800;
+    margin: 30px 0;
+  }
+
+  @include breakpoint(480px) {
+    font-size: 36px;
+  }
+
+  @include breakpoint(768px) {
+    font-size: 70px;
+  }
+
+  @include breakpoint(1024px) {
+    font-size: 128px;
+  }
+
+  @include breakpoint(1280px) {
+    font-size: 90px;
+  }
+
+  .countdown {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  @include breakpoint(480px) {
+    font-size: 42px;
+  }
+
+  @include breakpoint(768px) {
+    font-size: 52px;
+  }
+
+  @include breakpoint(1024px) {
+    font-size: 72px;
+  }
+
+  @include breakpoint(1280px) {
+    font-size: 90px;
+  }
+}

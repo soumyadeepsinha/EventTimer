@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: url("/background.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+header .content {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  color: #fff;
+  font: size 28px;
+  font-weight: 500;
+}
+
+header span {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header {
+    font-size: 70px;
+  }
+}
+
+header p {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    font-size: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    font-size: 128px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header {
+    font-size: 90px;
+  }
+}
+
+header .countdown {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    font-size: 52px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    font-size: 72px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header {
+    font-size: 90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
